@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calendar, Clock, MapPin, Trophy, Users, Filter, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Calendar, Clock, MapPin, Trophy, Filter, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const YearlySchedule = () => {
   const [selectedMonth, setSelectedMonth] = useState(new Date().getMonth());
@@ -192,15 +192,6 @@ const YearlySchedule = () => {
     } else {
       setSelectedMonth(selectedMonth < 11 ? selectedMonth + 1 : 0);
     }
-  };
-
-  const formatDate = (dateString: string) => {
-    const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', { 
-      weekday: 'short', 
-      month: 'short', 
-      day: 'numeric' 
-    });
   };
 
   const monthStats = {

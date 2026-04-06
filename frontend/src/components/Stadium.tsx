@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
-import { MapPin, Users, Calendar, Star, Navigation, Phone, Mail, Clock, Car, Coffee, Wifi, Shield, Camera } from 'lucide-react';
+import React from 'react';
+import { MapPin, Users, Calendar, Star, Navigation, Phone, Mail, Clock, Car, Coffee, Wifi, Shield } from 'lucide-react';
 
 const Stadium = () => {
-  const [selectedView, setSelectedView] = useState('overview');
-
   const stadiumInfo = {
     name: 'TSSA National Stadium',
     capacity: '45,000',

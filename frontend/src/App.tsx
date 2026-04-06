@@ -58,10 +58,10 @@ function App() {
             <div>
               <h4 className="font-semibold mb-4">Follow Us</h4>
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-white">Facebook</a>
-                <a href="#" className="text-gray-400 hover:text-white">Twitter</a>
-                <a href="#" className="text-gray-400 hover:text-white">Instagram</a>
-                <a href="#" className="text-gray-400 hover:text-white">YouTube</a>
+                <a href="https://facebook.com" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white">Facebook</a>
+                <a href="https://twitter.com" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white">Twitter</a>
+                <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white">Instagram</a>
+                <a href="https://youtube.com" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white">YouTube</a>
               </div>
             </div>
           </div>

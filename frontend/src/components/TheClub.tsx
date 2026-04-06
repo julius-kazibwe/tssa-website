@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, Trophy, Target, Heart, Award, Calendar, MapPin, Mail, Phone, Star, Shield, History } from 'lucide-react';
+import { Users, Trophy, Target, Heart, Award, MapPin, Mail, Shield, History } from 'lucide-react';
 
 const TheClub = () => {
   const clubInfo = {
