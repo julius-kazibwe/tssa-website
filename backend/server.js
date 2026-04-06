@@ -70,21 +70,19 @@ app.use((err, req, res, next) => {
   });
 });
 
-// 404 handler
-app.use('*', (req, res) => {
+// 404 handler (Express 5-compatible catch-all)
+app.use((req, res) => {
   res.status(404).json({
     error: 'Route not found',
     message: `Cannot ${req.method} ${req.originalUrl}`
   });
 });
 
-// Only listen in local/dev runtime. Vercel imports the app as a handler.
-if (require.main === module) {
-  app.listen(PORT, () => {
-    console.log(`🚀 TSYA Backend Server is running on port ${PORT}`);
-    console.log(`📊 API Documentation: http://localhost:${PORT}/api/health`);
-    console.log(`🌍 Environment: ${process.env.NODE_ENV || 'development'}`);
-  });
-}
+// Start server
+app.listen(PORT, () => {
+  console.log(`🚀 TSYA Backend Server is running on port ${PORT}`);
+  console.log(`📊 API Documentation: http://localhost:${PORT}/api/health`);
+  console.log(`🌍 Environment: ${process.env.NODE_ENV || 'development'}`);
+});
 
 module.exports = app;
